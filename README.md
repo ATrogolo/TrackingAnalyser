@@ -1,6 +1,7 @@
 # TrackingAnalyser
 
-This simple project was built to analyse tracking information, categorizing them.
+This simple project was built to analyse tracking information from PagineGialle portal, categorizing them.
+There were some problems due to empty listings and we were trying to looking where the problem was. 
 
 ## Usage
 
