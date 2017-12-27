@@ -1,0 +1,15 @@
+var fileData = [{
+  "PAG": "LISTING_Q",
+  "ACTION": "ERRORE_7",
+  "COSA": " belpasso",
+  "DOVE": "Catane (CT)",
+  "X": null,
+  "Y": null
+}, {
+  "PAG": "LISTING_Q",
+  "ACTION": "ERRORE_7",
+  "COSA": " bricofer",
+  "DOVE": "",
+  "X": 37.646496,
+  "Y": 12.613477
+}];

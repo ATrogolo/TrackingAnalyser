@@ -1,0 +1,158 @@
+@import 'normalize.css';
+h2 {
+  text-align: center;
+  background-color: #FFBE00;
+  color: black;
+  padding: 20px 0;
+}
+
+.btn {
+  border: 1px solid black;
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #0179bd;
+  color: white;
+  font-size: .85em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn-blue {
+  background-color: #0179bd;
+}
+
+.btn-red {
+  background-color: red;
+}
+
+.inputSection {
+  border-bottom: 1px solid darkblue;
+}
+
+.passwordSection>.passwordBox>h4 {
+  display: inline;
+}
+
+.passwordSection .wrong-password {
+  color: red;
+  font-weight: bold;
+  font-size: .9em;
+}
+
+.inputSection,
+.passwordSection {
+  text-align: center;
+}
+
+.resultsSection {
+  margin-top: 30px;
+}
+
+.inputSection .filePicker {
+  margin-bottom: 25px;
+}
+
+#resultsTable {
+  text-align: center;
+  width: 100%;
+}
+
+#resultsTable td.label>a {
+  text-decoration: none;
+  color: #0179bd;
+}
+
+.lists .listTitle {
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.lists li {
+  padding: 10px 0;
+  font-size: .9em;
+}
+
+.test-status {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.test-status>.loading {
+  display: inline-block;
+}
+
+.test-status>.test-running {
+  display: inline-block;
+  color: #566EEC;
+  font-weight: bold;
+  padding-top: 10px;
+  vertical-align: top;
+}
+
+.test-status>.test-completed {
+  display: inline-block;
+  color: green;
+  font-weight: bold;
+  padding-top: 5px;
+  vertical-align: top;
+}
+
+.test-status>a.export-data {
+  vertical-align: bottom;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.test-status>a.export-data:hover {
+  background-color: #fff;
+  color: #0179bd;
+}
+
+.test-status>a.cleanup {
+  background-color: rgb(24, 137, 24);
+}
+
+.test-status>.progressText {
+  margin-top: 5px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.loading.stop {
+  animation-name: none;
+  display: none;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  border: 0.25rem solid black;
+  border-top-color: white;
+  -webkit-animation: spin 1s infinite linear;
+  animation: spin 1s infinite linear;
+}

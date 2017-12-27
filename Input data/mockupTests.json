@@ -1,0 +1,34 @@
+﻿[
+   {
+      "PAG":"LISTING_Q",
+      "ACTION":"ERRORE_7",
+      "COSA":" pizza",
+      "DOVE":"Milano (MI)",
+      "X":null,
+      "Y":null
+   },
+   {
+      "PAG":"LISTING_Q",
+      "ACTION":"ERRORE_7",
+      "COSA":" bricofer",
+      "DOVE":"",
+      "X":37.646496,
+      "Y":12.613477
+   },
+   {
+      "PAG":"LISTING_Q",
+      "ACTION":"ERRORE_7",
+      "COSA":" pizza",
+      "DOVE":"Limone",
+      "X":null,
+      "Y":null
+   },
+   {
+      "PAG":"LISTING_Q",
+      "ACTION":"ERRORE_7",
+      "COSA":" saskdjalsjdsklaalsd halkdhaklhakl dhj",
+      "DOVE":"hnasbdjahbdsdjksjhasjkdhajksdh",
+      "X":null,
+      "Y":null
+   }
+]

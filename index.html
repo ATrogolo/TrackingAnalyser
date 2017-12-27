@@ -1,0 +1,124 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <link rel="stylesheet" href="styles/parser.css">
+</head>
+
+<body>
+  <h2>PagineGialle empty listings analyser</h2>
+
+  <section class="passwordSection">
+    <form class="passwordBox">
+      <h4>Password:</h4>
+      <input id="auth" name="password" type="password">
+      <a id="authBtn" class="btn btn-blue" href="javascript:void(0);">Login</a>
+    </form>
+    <div class="wrong-password hidden">Wrong password :(</div>
+  </section>
+
+  <section class="inputSection hidden">
+    <div class="mwrapperUrl">
+      <h4 style="display: inline-block;">Mwrapper hostname:</h4>
+      <input id="mwrapperUrl" type="text" name="mwrapperUrl" placeholder="Set here mwrapper URL" value="http://">
+    </div>
+    <div class="filePicker">
+      <h4>Select the JSON file to scan</h4>
+      <input id="files" name="files[]" type="file" accept=".json">
+    </div>
+
+    <div class="test-status hidden">
+      <div class="loading"></div>
+      <div class="test-running">Test running...</div>
+      <div class="test-completed hidden">Test completed</div>
+      <div class="progressText">Analysed
+        <span class="computed">0</span>
+        of
+        <span class="total"></span>
+        entries</div>
+      <a class="export-data btn btn-blue hidden" download="report.json" href="javascript:void();">Export data</a>
+      <a class="stop-scan btn btn-red hidden" href="javascript:void();">Stop scan</a>
+      <a class="cleanup btn hidden" href="javascript:void();">Clear</a>
+    </div>
+  </section>
+
+  <section class="resultsSection hidden">
+    <table id="resultsTable">
+      <thead>
+        <tr>
+          <th>Counter Name</th>
+          <th>Entries</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="searchesWithResults">
+          <td class="label">
+            <a href="#resultsList">Searches with results</a>
+          </td>
+          <td class="counter">0</td>
+        </tr>
+        <tr id="searchesWithNoResults">
+          <td class="label">
+            <a href="#noResultsList">Searches without results</a>
+          </td>
+          <td class="counter">0</td>
+        </tr>
+        <tr id="ambiguitySearches">
+          <td class="label">
+            <a href="#ambiguityList">Ambiguity Searches</a>
+          </td>
+          <td class="counter">0</td>
+        </tr>
+        <tr id="wrongSearches">
+          <td class="label">
+            <a href="#wrongList">Wrong Searches</a>
+          </td>
+          <td class="counter">0</td>
+        </tr>
+        <tr id="errors">
+          <td class="label">
+            <a href="#errorList">Errors</a>
+          </td>
+          <td class="counter">0</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="lists">
+      <ol id="resultsList">
+        <a name="resultsList"></a>
+        <div class="listTitle">Searches with results</div>
+      </ol>
+
+      <ol id="noResultsList">
+        <a name="noResultsList"></a>
+        <div class="listTitle">Searches without results</div>
+      </ol>
+
+      <ol id="ambiguityList">
+        <a name="ambiguityList"></a>
+        <div class="listTitle">Ambiguity Searches</div>
+      </ol>
+
+      <ol id="wrongList">
+        <a name="wrongList"></a>
+        <div class="listTitle">Wrong Searches</div>
+      </ol>
+
+      <ol id="errorList">
+        <a name="errorList"></a>
+        <div class="listTitle">Errors</div>
+      </ol>
+    </div>
+  </section>
+</body>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="lib/md5.min.js"></script>
+<!-- <script type="text/javascript" src="test.json"></script> -->
+<script type="text/javascript" src="parser.js"></script>
+
+</html>
